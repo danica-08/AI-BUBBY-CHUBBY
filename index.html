@@ -12,7 +12,7 @@
         /* Custom styles for animations and specific elements not covered by Tailwind */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f2f5; /* Light gray background */
+            background-color: #E9E3F5; /* Light purple background */
             color: #333;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
@@ -96,8 +96,8 @@
 
         /* Icon styling (could use SVG or FontAwesome if loaded) */
         .icon-circle {
-            background-color: #e0f2fe; /* light-blue-100 */
-            color: #007bff; /* primary blue */
+            background-color: #D8BFD8; /* Thistle - light purple/pink */
+            color: #8A2BE2; /* BlueViolet */
             border-radius: 9999px; /* full rounded */
             padding: 0.75rem;
             display: inline-flex;
@@ -112,7 +112,7 @@
         .brain-shape {
             width: 100px;
             height: 80px;
-            background-color: #a78bfa; /* violet-400 */
+            background-color: #C7A2CB; /* Lilac */
             border-radius: 50% 50% 0 0 / 100% 100% 0 0;
             position: relative;
             clip-path: ellipse(50% 50% at 50% 50%); /* make it more brain-like */
@@ -121,16 +121,16 @@
         .ai-circuit {
             width: 80px;
             height: 80px;
-            background-color: #38bdf8; /* sky-400 */
+            background-color: #87CEFA; /* LightSkyBlue */
             border-radius: 50%;
             position: relative;
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+            box-shadow: 0 0 15px rgba(135, 206, 250, 0.7); /* LightSkyBlue with opacity */
         }
 
         .data-stream {
             width: 20px;
             height: 60px;
-            background-color: #6ee7b7; /* emerald-300 */
+            background-color: #FFC0CB; /* Pink */
             position: relative;
             margin: 0 10px;
             border-radius: 5px;
@@ -147,13 +147,13 @@
             height: 0;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
-            border-bottom: 80px solid #ef4444; /* red-500 */
+            border-bottom: 80px solid #DB7093; /* PaleVioletRed */
         }
 
         .automation-bias-bar {
             width: 100%;
             height: 10px;
-            background-color: #cbd5e1; /* slate-300 */
+            background-color: #DDA0DD; /* Plum */
             border-radius: 5px;
             overflow: hidden;
         }
@@ -161,7 +161,7 @@
         .automation-bias-fill {
             height: 100%;
             width: 0; /* Starts empty */
-            background-color: #f97316; /* orange-500 */
+            background-color: #FF69B4; /* HotPink */
             transition: width 1s ease-out;
             animation: fillBar 2s forwards; /* Example animation */
         }
@@ -227,46 +227,46 @@
 <body class="bg-gray-100 antialiased">
 
     <!-- Main Infographic Container -->
-    <div class="container mx-auto p-6 md:p-10 lg:p-16 bg-white rounded-xl shadow-lg my-8 max-w-7xl">
+    <div class="container mx-auto p-6 md:p-10 lg:p-16 bg-white rounded-xl shadow-lg my-8 max-w-7xl" style="background-color: #F5F0FA;"> <!-- Light Lavender for main container bg -->
 
         <!-- Header Section -->
-        <header class="text-center mb-12 py-8 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-xl shadow-md fade-in-up">
+        <header class="text-center mb-12 py-8 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white rounded-xl shadow-md fade-in-up">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3">AI & Us: Navigating Decisions in an Automated World</h1>
             <p class="text-lg md:text-xl font-light opacity-90">Understanding AI Augmentation & The Dangers of Automation Bias</p>
         </header>
 
         <!-- Section 1: The Human Element of Decision Making -->
-        <section id="human-decision" class="mb-16 p-8 bg-blue-50 rounded-xl shadow-md animated-section">
-            <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-6 flex items-center">
-                <span class="icon-circle mr-3 bg-blue-200 text-blue-700">🧠</span>
+        <section id="human-decision" class="mb-16 p-8 bg-purple-100 rounded-xl shadow-md animated-section"> <!-- Light purple shade -->
+            <h2 class="text-3xl md:text-4xl font-semibold text-purple-800 mb-6 flex items-center"> <!-- Darker purple text -->
+                <span class="icon-circle mr-3 bg-purple-200 text-purple-700">🧠</span> <!-- Purple themed icon -->
                 The Human Element: Instinct & Insight
             </h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2 text-lg leading-relaxed">
                     <p class="mb-4">At our core, humans make decisions by weighing various factors, combining logical reasoning with <span class="tooltip-container font-semibold cursor-pointer">experience<span class="tooltip">Learned knowledge from past events.</span></span>, <span class="tooltip-container font-semibold cursor-pointer">intuition<span class="tooltip">A feeling that guides decision-making without conscious reasoning.</span></span>, and <span class="tooltip-container font-semibold cursor-pointer">emotions<span class="tooltip">Affective states that influence choices.</span></span>.</p>
                     <p class="mb-4">This process, while powerful, is susceptible to cognitive biases, fatigue, and limited information processing capacity.</p>
-                    <button onclick="openModal('humanDecisionModal')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    <button onclick="openModal('humanDecisionModal')" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                         Explore Human Decision Process
                     </button>
                 </div>
                 <div class="md:w-1/2 flex justify-center items-center relative">
                     <!-- Simple Brain-like SVG or shape -->
-                    <svg class="w-64 h-auto text-violet-500" viewBox="0 0 200 200" fill="currentColor">
+                    <svg class="w-64 h-auto text-pink-500" viewBox="0 0 200 200" fill="currentColor"> <!-- Pink brain -->
                         <path d="M100,20 C140,0 180,20 180,70 C180,120 160,160 100,180 C40,160 20,120 20,70 C20,20 60,0 100,20 Z M100,20 C100,40 120,50 130,70 C140,90 140,110 120,130 C100,150 80,150 60,130 C40,110 40,90 50,70 C60,50 80,40 100,20 Z" />
-                        <circle cx="100" cy="100" r="15" fill="#e0f2fe" class="animate-pulse delay-1"></circle>
-                        <text x="100" y="105" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Decision</text>
+                        <circle cx="100" cy="100" r="15" fill="#E6E6FA" class="animate-pulse delay-1"></circle> <!-- Lavender fill for circle -->
+                        <text x="100" y="105" text-anchor="middle" font-size="16" fill="#4B0082" font-weight="bold">Decision</text> <!-- Indigo text -->
                     </svg>
-                    <div class="absolute top-1/4 left-1/4 text-sm font-semibold text-gray-700">Experience</div>
-                    <div class="absolute top-1/4 right-1/4 text-sm font-semibold text-gray-700">Intuition</div>
-                    <div class="absolute bottom-1/4 left-1/3 text-sm font-semibold text-gray-700">Data</div>
+                    <div class="absolute top-1/4 left-1/4 text-sm font-semibold text-purple-700">Experience</div>
+                    <div class="absolute top-1/4 right-1/4 text-sm font-semibold text-purple-700">Intuition</div>
+                    <div class="absolute bottom-1/4 left-1/3 text-sm font-semibold text-purple-700">Data</div>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: Introducing AI Augmentation: The Power Up -->
-        <section id="ai-augmentation" class="mb-16 p-8 bg-gradient-to-r from-teal-50 to-cyan-100 rounded-xl shadow-md animated-section">
-            <h2 class="text-3xl md:text-4xl font-semibold text-cyan-800 mb-6 flex items-center">
-                <span class="icon-circle mr-3 bg-cyan-200 text-cyan-700">⚡</span>
+        <section id="ai-augmentation" class="mb-16 p-8 bg-gradient-to-r from-blue-100 to-pink-100 rounded-xl shadow-md animated-section"> <!-- Blue to Pink gradient -->
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-6 flex items-center"> <!-- Darker blue text -->
+                <span class="icon-circle mr-3 bg-blue-200 text-blue-700">⚡</span> <!-- Blue themed icon -->
                 AI Augmentation: The Power-Up
             </h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
@@ -274,21 +274,21 @@
                     <!-- AI Integration Visual -->
                     <svg class="w-72 h-auto" viewBox="0 0 300 150">
                         <!-- Human Brain simplified -->
-                        <path d="M70,50 C100,20 140,20 170,50 C170,80 150,110 120,130 C90,110 70,80 70,50 Z" fill="#a78bfa" opacity="0.8"/>
+                        <path d="M70,50 C100,20 140,20 170,50 C170,80 150,110 120,130 C90,110 70,80 70,50 Z" fill="#C7A2CB" opacity="0.8"/> <!-- Lilac brain -->
                         <text x="120" y="90" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">Human</text>
 
                         <!-- AI Circuitry simplified -->
-                        <rect x="200" y="40" width="80" height="70" rx="15" ry="15" fill="#38bdf8" opacity="0.8"/>
-                        <circle cx="240" cy="55" r="8" fill="#e0f2fe" class="animate-pulse"></circle>
-                        <circle cx="220" cy="75" r="8" fill="#e0f2fe" class="animate-pulse delay-1"></circle>
-                        <circle cx="260" cy="75" r="8" fill="#e0f2fe" class="animate-pulse delay-2"></circle>
+                        <rect x="200" y="40" width="80" height="70" rx="15" ry="15" fill="#87CEFA" opacity="0.8"/> <!-- LightSkyBlue circuit -->
+                        <circle cx="240" cy="55" r="8" fill="#E6E6FA" class="animate-pulse"></circle> <!-- Lavender circle -->
+                        <circle cx="220" cy="75" r="8" fill="#E6E6FA" class="animate-pulse delay-1"></circle> <!-- Lavender circle -->
+                        <circle cx="260" cy="75" r="8" fill="#E6E6FA" class="animate-pulse delay-2"></circle> <!-- Lavender circle -->
                         <text x="240" y="95" text-anchor="middle" font-size="20" fill="#fff" font-weight="bold">AI</text>
 
                         <!-- Data flow arrows -->
-                        <path d="M175,75 C190,75 190,75 200,75" stroke="#6ee7b7" stroke-width="4" fill="none" marker-end="url(#arrowhead)" class="data-flow-anim"></path>
+                        <path d="M175,75 C190,75 190,75 200,75" stroke="#FFC0CB" stroke-width="4" fill="none" marker-end="url(#arrowhead)" class="data-flow-anim"></path> <!-- Pink arrow -->
                         <defs>
                             <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-                                <polygon points="0 0, 10 3.5, 0 7" fill="#6ee7b7" />
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#FFC0CB" /> <!-- Pink arrowhead -->
                             </marker>
                         </defs>
                     </svg>
@@ -296,7 +296,7 @@
                 <div class="md:w-1/2 text-lg leading-relaxed">
                     <p class="mb-4">AI can supercharge our decision-making by processing <span class="font-semibold tooltip-container">vast amounts of data<span class="tooltip">Analyze petabytes of data beyond human capacity.</span></span>, identifying <span class="font-semibold tooltip-container">complex patterns<span class="tooltip">Discover hidden correlations and insights.</span></span>, and providing <span class="font-semibold tooltip-container">predictive insights<span class="tooltip">Forecast outcomes and probabilities.</span></span> that humans might miss.</p>
                     <p class="mb-4">This leads to increased speed, enhanced accuracy, and improved scalability in various fields, from healthcare to finance.</p>
-                    <button onclick="openModal('aiBenefitsModal')" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    <button onclick="openModal('aiBenefitsModal')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                         Discover AI's Benefits
                     </button>
                 </div>
@@ -304,73 +304,73 @@
         </section>
 
         <!-- Section 3: The Pitfall: Automation Bias -->
-        <section id="automation-bias-intro" class="mb-16 p-8 bg-red-50 rounded-xl shadow-md animated-section">
-            <h2 class="text-3xl md:text-4xl font-semibold text-red-800 mb-6 flex items-center">
-                <span class="icon-circle mr-3 bg-red-200 text-red-700">⚠️</span>
+        <section id="automation-bias-intro" class="mb-16 p-8 bg-pink-100 rounded-xl shadow-md animated-section"> <!-- Light pink shade -->
+            <h2 class="text-3xl md:text-4xl font-semibold text-pink-800 mb-6 flex items-center"> <!-- Darker pink text -->
+                <span class="icon-circle mr-3 bg-pink-200 text-pink-700">⚠️</span> <!-- Pink themed icon -->
                 The Pitfall: Automation Bias
             </h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2 text-lg leading-relaxed">
-                    <p class="mb-4">While AI offers immense advantages, it introduces a critical danger: <strong class="text-red-600">Automation Bias</strong>. This occurs when humans
+                    <p class="mb-4">While AI offers immense advantages, it introduces a critical danger: <strong class="text-pink-600">Automation Bias</strong>. This occurs when humans
                         <span class="font-semibold tooltip-container">over-rely<span class="tooltip">Placing excessive trust in automated systems.</span></span> on automated systems, often leading to a
                         <span class="font-semibold tooltip-container">reduced vigilance<span class="tooltip">Decreased attention and critical evaluation.</span></span> and a failure to detect errors or contradictions in AI-generated recommendations.
                     </p>
                     <p class="mb-4">It's a subtle but powerful cognitive bias that can lead to catastrophic consequences if not actively managed.</p>
-                    <button onclick="openModal('whatIsBiasModal')" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    <button onclick="openModal('whatIsBiasModal')" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                         What is Automation Bias?
                     </button>
                 </div>
                 <div class="md:w-1/2 flex justify-center items-center relative">
                     <!-- Danger Triangle Visual -->
-                    <div class="danger-triangle"></div>
+                    <div class="danger-triangle" style="border-bottom-color: #DB7093;"></div> <!-- PaleVioletRed triangle -->
                     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-xl">BIAS</div>
-                    <div class="absolute -bottom-4 text-center text-sm text-red-700">"Trusting the Machine Too Much"</div>
+                    <div class="absolute -bottom-4 text-center text-sm text-pink-700">"Trusting the Machine Too Much"</div>
                 </div>
             </div>
         </section>
 
         <!-- Section 4: Understanding Automation Bias -->
-        <section id="understanding-bias" class="mb-16 p-8 bg-orange-50 rounded-xl shadow-md animated-section">
-            <h2 class="text-3xl md:text-4xl font-semibold text-orange-800 mb-6 flex items-center">
-                <span class="icon-circle mr-3 bg-orange-200 text-orange-700">🔍</span>
+        <section id="understanding-bias" class="mb-16 p-8 bg-purple-50 rounded-xl shadow-md animated-section"> <!-- Light purple shade for contrast -->
+            <h2 class="text-3xl md:text-4xl font-semibold text-purple-800 mb-6 flex items-center"> <!-- Darker purple text -->
+                <span class="icon-circle mr-3 bg-purple-200 text-purple-700">🔍</span> <!-- Purple themed icon -->
                 Understanding Automation Bias
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
                 <!-- Cause 1 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="icon-circle mx-auto mb-4 bg-orange-100 text-orange-600 text-4xl">😴</div>
-                    <h3 class="text-xl font-bold mb-2">Complacency</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-pink-100 text-pink-600 text-4xl">😴</div> <!-- Pink icon -->
+                    <h3 class="text-xl font-bold mb-2 text-purple-700">Complacency</h3>
                     <p class="text-gray-700">When automation makes tasks easier, human operators may become less attentive and rely passively on the system.</p>
                 </div>
                 <!-- Cause 2 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 delay-1">
-                    <div class="icon-circle mx-auto mb-4 bg-orange-100 text-orange-600 text-4xl">💡</div>
-                    <h3 class="text-xl font-bold mb-2">Cognitive Laziness</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-pink-100 text-pink-600 text-4xl">💡</div> <!-- Pink icon -->
+                    <h3 class="text-xl font-bold mb-2 text-purple-700">Cognitive Laziness</h3>
                     <p class="text-gray-700">It's often easier to accept an automated recommendation than to expend the effort for independent verification.</p>
                 </div>
                 <!-- Cause 3 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 delay-2">
-                    <div class="icon-circle mx-auto mb-4 bg-orange-100 text-orange-600 text-4xl">❌</div>
-                    <h3 class="text-xl font-bold mb-2">Error of Omission/Commission</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-pink-100 text-pink-600 text-4xl">❌</div> <!-- Pink icon -->
+                    <h3 class="text-xl font-bold mb-2 text-purple-700">Error of Omission/Commission</h3>
                     <p class="text-gray-700">Failing to act when automation suggests inaction (omission) or acting incorrectly when automation suggests it (commission).</p>
                 </div>
             </div>
             <div class="mt-8">
-                <h3 class="text-2xl font-bold text-orange-700 mb-4 text-center">Impact on Decision Quality:</h3>
+                <h3 class="text-2xl font-bold text-purple-700 mb-4 text-center">Impact on Decision Quality:</h3>
                 <div class="flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-xl shadow-md">
                     <div class="md:w-1/3 flex justify-center">
-                        <img src="https://placehold.co/120x120/f97316/ffffff?text=⚠️" alt="Warning Icon" class="w-24 h-24">
+                        <img src="https://placehold.co/120x120/FF69B4/ffffff?text=⚠️" alt="Warning Icon" class="w-24 h-24"> <!-- HotPink placeholder -->
                     </div>
                     <div class="md:w-2/3">
-                        <p class="mb-2 text-lg"><strong class="font-semibold">Reduced Critical Thinking:</strong> Users stop questioning the AI's output.</p>
-                        <div class="automation-bias-bar">
-                            <div class="automation-bias-fill" style="width: 70%;"></div> <!-- Example fill -->
+                        <p class="mb-2 text-lg"><strong class="font-semibold text-purple-600">Reduced Critical Thinking:</strong> Users stop questioning the AI's output.</p>
+                        <div class="automation-bias-bar" style="background-color: #DDA0DD;"> <!-- Plum bar background -->
+                            <div class="automation-bias-fill" style="width: 70%; background-color: #FF69B4;"></div> <!-- HotPink fill -->
                         </div>
-                        <p class="mt-4 mb-2 text-lg"><strong class="font-semibold">Increased Error Rate:</strong> Overlooking subtle but critical flaws in data or logic.</p>
-                        <div class="automation-bias-bar">
-                            <div class="automation-bias-fill" style="width: 55%; background-color: #ef4444;"></div> <!-- Example fill -->
+                        <p class="mt-4 mb-2 text-lg"><strong class="font-semibold text-purple-600">Increased Error Rate:</strong> Overlooking subtle but critical flaws in data or logic.</p>
+                        <div class="automation-bias-bar" style="background-color: #DDA0DD;"> <!-- Plum bar background -->
+                            <div class="automation-bias-fill" style="width: 55%; background-color: #DB7093;"></div> <!-- PaleVioletRed fill -->
                         </div>
-                        <button onclick="openModal('impactBiasModal')" class="mt-6 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                        <button onclick="openModal('impactBiasModal')" class="mt-6 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                             Real-World Examples
                         </button>
                     </div>
@@ -379,47 +379,47 @@
         </section>
 
         <!-- Section 5: Mitigating Automation Bias -->
-        <section id="mitigation-strategies" class="mb-16 p-8 bg-green-50 rounded-xl shadow-md animated-section">
-            <h2 class="text-3xl md:text-4xl font-semibold text-green-800 mb-6 flex items-center">
-                <span class="icon-circle mr-3 bg-green-200 text-green-700">✅</span>
+        <section id="mitigation-strategies" class="mb-16 p-8 bg-blue-50 rounded-xl shadow-md animated-section"> <!-- Light blue shade -->
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-6 flex items-center"> <!-- Darker blue text -->
+                <span class="icon-circle mr-3 bg-blue-200 text-blue-700">✅</span> <!-- Blue themed icon -->
                 Mitigating Automation Bias: Strategies for Smart Decisions
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Strategy 1 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="icon-circle mx-auto mb-4 bg-green-100 text-green-600 text-4xl">💡</div>
-                    <h3 class="text-xl font-bold mb-2">Enhance AI Transparency</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-blue-100 text-blue-600 text-4xl">💡</div> <!-- Blue icon -->
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">Enhance AI Transparency</h3>
                     <p class="text-gray-700">Provide clear explanations (XAI) for AI recommendations, showing the data and logic behind its suggestions.</p>
                 </div>
                 <!-- Strategy 2 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 delay-1">
-                    <div class="icon-circle mx-auto mb-4 bg-green-100 text-green-600 text-4xl">👨‍🏫</div>
-                    <h3 class="text-xl font-bold mb-2">Promote Critical Training</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-blue-100 text-blue-600 text-4xl">👨‍🏫</div> <!-- Blue icon -->
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">Promote Critical Training</h3>
                     <p class="text-gray-700">Train users to critically evaluate AI outputs, recognize potential errors, and understand AI limitations.</p>
                 </div>
                 <!-- Strategy 3 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 delay-2">
-                    <div class="icon-circle mx-auto mb-4 bg-green-100 text-green-600 text-4xl">🔄</div>
-                    <h3 class="text-xl font-bold mb-2">Implement Human-in-the-Loop</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-blue-100 text-blue-600 text-4xl">🔄</div> <!-- Blue icon -->
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">Implement Human-in-the-Loop</h3>
                     <p class="text-gray-700">Design systems where human oversight and intervention are integral, especially for high-stakes decisions.</p>
                 </div>
                 <!-- Strategy 4 -->
                 <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 delay-3">
-                    <div class="icon-circle mx-auto mb-4 bg-green-100 text-green-600 text-4xl">📊</div>
-                    <h3 class="text-xl font-bold mb-2">Varying Levels of Automation</h3>
+                    <div class="icon-circle mx-auto mb-4 bg-blue-100 text-blue-600 text-4xl">📊</div> <!-- Blue icon -->
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">Varying Levels of Automation</h3>
                     <p class="text-gray-700">Allow users to adjust the level of automation based on task complexity, confidence, and criticality.</p>
                 </div>
             </div>
             <div class="text-center mt-10">
-                <button onclick="openModal('mitigationSummaryModal')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                <button onclick="openModal('mitigationSummaryModal')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                     Full Mitigation Guide
                 </button>
             </div>
         </section>
 
         <!-- Conclusion Section -->
-        <section id="conclusion" class="text-center p-8 bg-blue-100 rounded-xl shadow-md animated-section">
-            <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-6">
+        <section id="conclusion" class="text-center p-8 bg-pink-50 rounded-xl shadow-md animated-section"> <!-- Light pink shade -->
+            <h2 class="text-3xl md:text-4xl font-semibold text-pink-800 mb-6"> <!-- Darker pink text -->
                 The Future: Augmented, Not Automated
             </h2>
             <p class="text-lg leading-relaxed mb-6">
@@ -427,7 +427,7 @@
             </p>
             <div class="flex justify-center items-center gap-4">
                 <span class="text-4xl">💡</span>
-                <span class="text-xl font-bold text-gray-700">Human + AI = Optimized Decisions</span>
+                <span class="text-xl font-bold text-purple-700">Human + AI = Optimized Decisions</span> <!-- Purple text for emphasis -->
                 <span class="text-4xl">🚀</span>
             </div>
         </section>
@@ -438,11 +438,11 @@
 
     <!-- Human Decision Process Modal -->
     <div id="humanDecisionModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #FAF0E6;"> <!-- Linen background for modal -->
             <span class="close-button" onclick="closeModal('humanDecisionModal')">&times;</span>
-            <h2 class="text-3xl font-bold text-blue-800 mb-4">The Human Decision Process</h2>
+            <h2 class="text-3xl font-bold text-purple-800 mb-4">The Human Decision Process</h2>
             <p class="mb-4">Human decision-making is a complex process influenced by cognitive abilities, past experiences, emotional states, and environmental factors. It typically involves several steps:</p>
-            <ul class="list-disc list-inside space-y-2 text-lg">
+            <ul class="list-disc list-inside space-y-2 text-lg text-purple-700">
                 <li><strong>Problem Recognition:</strong> Identifying a situation where a decision is needed.</li>
                 <li><strong>Information Gathering:</strong> Collecting relevant data and facts.</li>
                 <li><strong>Option Generation:</strong> Brainstorming possible courses of action.</li>
@@ -456,11 +456,11 @@
 
     <!-- AI Benefits Modal -->
     <div id="aiBenefitsModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #E6F7FF;"> <!-- Light blue background for modal -->
             <span class="close-button" onclick="closeModal('aiBenefitsModal')">&times;</span>
-            <h2 class="text-3xl font-bold text-cyan-800 mb-4">Benefits of AI Augmentation</h2>
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Benefits of AI Augmentation</h2>
             <p class="mb-4">AI significantly enhances human decision-making in several key areas:</p>
-            <ul class="list-disc list-inside space-y-2 text-lg">
+            <ul class="list-disc list-inside space-y-2 text-lg text-blue-700">
                 <li><strong>Speed & Efficiency:</strong> AI can analyze vast datasets and generate recommendations in seconds, far surpassing human speed.</li>
                 <li><strong>Enhanced Accuracy:</strong> By identifying subtle patterns and correlations, AI can reduce human error and improve prediction accuracy.</li>
                 <li><strong>Scalability:</strong> AI systems can handle an immense volume of data and complex variables, making large-scale decision support feasible.</li>
@@ -473,12 +473,12 @@
 
     <!-- What is Automation Bias Modal -->
     <div id="whatIsBiasModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #FFF0F5;"> <!-- LavenderBlush background for modal -->
             <span class="close-button" onclick="closeModal('whatIsBiasModal')">&times;</span>
-            <h2 class="text-3xl font-bold text-red-800 mb-4">What is Automation Bias?</h2>
+            <h2 class="text-3xl font-bold text-pink-800 mb-4">What is Automation Bias?</h2>
             <p class="mb-4">Automation bias is a cognitive bias where human decision-makers disproportionately trust and rely on automated aids, often leading to errors or suboptimal decisions when the automated system's recommendations are incorrect or absent.</p>
             <p class="mb-4">It manifests in two primary ways:</p>
-            <ul class="list-disc list-inside space-y-2 text-lg">
+            <ul class="list-disc list-inside space-y-2 text-lg text-pink-700">
                 <li><strong>Errors of Omission:</strong> Failing to act when the automated system incorrectly suggests inaction. (e.g., ignoring a critical alarm because the automated system hasn't flagged it).</li>
                 <li><strong>Errors of Commission:</strong> Acting incorrectly because the automated system provides a wrong recommendation, and the human accepts it without critical review. (e.g., a pilot following a faulty autopilot command).</li>
             </ul>
@@ -488,27 +488,27 @@
 
     <!-- Impact of Bias Modal -->
     <div id="impactBiasModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #FAF0E6;"> <!-- Linen background for modal -->
             <span class="close-button" onclick="closeModal('impactBiasModal')">&times;</span>
-            <h2 class="text-3xl font-bold text-orange-800 mb-4">Real-World Examples & Impact of Automation Bias</h2>
+            <h2 class="text-3xl font-bold text-purple-800 mb-4">Real-World Examples & Impact of Automation Bias</h2>
             <p class="mb-4">Automation bias has been implicated in various high-stakes scenarios:</p>
-            <ul class="list-disc list-inside space-y-2 text-lg">
+            <ul class="list-disc list-inside space-y-2 text-lg text-purple-700">
                 <li><strong>Aviation Incidents:</strong> Pilots over-relying on autopilots, leading to a loss of manual flying skills and delayed recognition of system malfunctions.</li>
                 <li><strong>Medical Errors:</strong> Clinicians blindly accepting diagnostic suggestions from AI, potentially missing subtle symptoms or incorrect data inputs.</li>
                 <li><strong>Cybersecurity:</strong> Analysts trusting automated threat detection systems so completely that they overlook novel or sophisticated attacks.</li>
                 <li><strong>Financial Trading:</strong> Traders relying solely on algorithmic trading signals without understanding underlying market conditions, leading to significant losses during flash crashes.</li>
             </ul>
-            <p class="mt-4 font-semibold text-red-600">The core impact is a degradation of human critical thinking and vigilance, leading to missed errors and potentially severe consequences across critical domains.</p>
+            <p class="mt-4 font-semibold text-pink-600">The core impact is a degradation of human critical thinking and vigilance, leading to missed errors and potentially severe consequences across critical domains.</p>
         </div>
     </div>
 
     <!-- Mitigation Summary Modal -->
     <div id="mitigationSummaryModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #E6F7FF;"> <!-- Light blue background for modal -->
             <span class="close-button" onclick="closeModal('mitigationSummaryModal')">&times;</span>
-            <h2 class="text-3xl font-bold text-green-800 mb-4">Comprehensive Mitigation Strategies</h2>
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Comprehensive Mitigation Strategies</h2>
             <p class="mb-4">Effectively combating automation bias requires a multi-faceted approach:</p>
-            <ul class="list-disc list-inside space-y-2 text-lg">
+            <ul class="list-disc list-inside space-y-2 text-lg text-blue-700">
                 <li><strong>Design for Transparency (XAI):</strong> Build AI systems that can explain their reasoning, highlighting key features and decision rules.</li>
                 <li><strong>Contextual Training:</strong> Educate users not just on how to operate AI, but also on its limitations, potential failure modes, and the specific risks of automation bias.</li>
                 <li><strong>Vigilance Tasks:</strong> Design tasks that require human vigilance and critical thinking even when automation is present, preventing complacency.</li>
